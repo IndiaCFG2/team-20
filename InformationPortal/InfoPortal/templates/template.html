@@ -1,5 +1,6 @@
 {% extends "header.html" %}
-<!DOCTYPE html> 
+{% block content%}
+
 <head>
 	{% load static %}
     <script async="" src="{% static 'analytics.js' %}"></script><script src="{% static 'Chart.min.js' %}"></script>
@@ -67,7 +68,8 @@
 
 							gridLines: {
 								drawOnChartArea: false,
-							},
+							}
+						},
 							{
 							type: 'linear', 
 							display: true,
@@ -88,3 +90,4 @@
 
 </body> 
 </html> 
+{% endblock content %}
