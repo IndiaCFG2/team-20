@@ -1,192 +1,3 @@
-
-<!<!DOCTYPE html>
-<html>
-<head>
-	<title>JALJEEVIKA</title>
-	 <meta charset="utf-8">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
- <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-   <h1 class="animate__animated animate__bounce" height="30px">Jaljeevika</h1>
-
-   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-     <ul class="navbar-nav">
-      <li class="nav-item">
-      <a class="nav-link" href="fpomain.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="govt.html">Goverment Schemes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="profileriya.html">Profile</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="insert.html">Add Product</a>
-    </li>
-  </ul>
-  </nav>
-
-<div class="container">
-  <form action="action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="name" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Email</label>
-      </div>
-      <div class="col-75">
-        <input type="email" id="lname" name="email" placeholder="Your email..">
-      </div>
-    </div>
-
- <div class="row">
-      <div class="col-25">
-        <label for="lname">number</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="number" placeholder="Your number..">
-      </div>
-    </div>
-
-     <div class="row">
-      <div class="col-25">
-        <label for="lname">Price</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="price" placeholder="Your new price..">
-      </div>
-    </div>
-
-     <div class="row">
-      <div class="col-25">
-        <label for="lname">District</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="email" placeholder="Your district..">
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">State</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="state" name="state" placeholder="Your district..">
-      </div>
-    </div>
-    
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>
-
-
-<footer class="page-footer font-small blue pt-4" >
-
- 
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-     
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">What We Do</a>
-          </li>
-          <li>
-            <a href="#!">What We Are</a>
-          </li>
-          <li>
-            <a href="#!">The Challenge</a>
-          </li>
-          <li>
-            <a href="#!">Our Solutions</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">About Us</a>
-          </li>
-          <li>
-            <a href="#!">About Our Journey</a>
-          </li>
-        </ul>
-
-      </div>
-
-
-       <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        
-
-        <ul class="list-unstyled">
-          <li></li>
-            <a href="fpomain.html">Home</a>
-          </li>
-          <li>
-            <a href="insert.html">Donate Now</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-       
-    </div>
-    <!-- Grid row -->
-   
-  
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-
-
-<<<<<<< HEAD
-=======
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -195,15 +6,18 @@
   <title>Marketting</title>
 </head>
 <body>
-  <header class="bg-green-600 text-gray-700 body-font">
+  <header class="bg-indigo-500 text-gray-700 body-font">
     <div class="  container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
         <span class="ml-3 text-xl">CodeForCure</span>
       </a>
-     
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="profile.php">Profile</a>
+        <a class="mr-5 hover:text-gray-900" href="policies.php" >Government Policies</a>
+        </nav>
      <!-- <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -212,15 +26,113 @@
     </div>
   </header>
 
-  <div class="lg:w-2/3 md:w-1/2 bg-white flex flex-col md:ml-40 w-full md:py-8 mt-8 md:mt-0">
-            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">EDIT</h2>
-            <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Name" type="text">
-            <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Email" type="text">
-            <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="District" type="text">
-            <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="State" type="text">
-            <button class="text-white bg-green-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Edit</button>
-            </div>
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex w-full mb-20 flex-wrap">
+        <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="img4.jpg">
+              <div class="text-center relative z-10 w-full">
+          <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Partner with Us to IMPACT SCALE</h2>
+          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Centre for Aquatic Livelihood Jaljeevika 
+            is addressing the issue of small-scale fish farmers, building community resilience and capacity to 
+            enhance livelihood opportunities using existing water bodies, technology and leveraging institutions.</p>       
+        </div>
+      </div>    
+    </div>
+
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+
+    <?php
+            
+
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "codeforcure";
+
+            $conn = mysqli_connect($servername, $username, $password, $database);
+            // Die if connection was not successful
+            if (!$conn){
+                // die("Sorry we failed to connect: ". mysqli_connect_error());
+            }
+            else{
+                // echo "Connection was successful<br>";
+            }
     
+            $sql = "SELECT * FROM `product1`";
+            $result = mysqli_query($conn, $sql);
+    
+            // Find the number of records returned
+            $num = mysqli_num_rows($result);
+            // echo $num;
+            // echo " records found in the DataBase<br>";
+            // Display the rows returned by the sql query
+            // echo $name;
+            // echo $password1;
+            if($num> 0){
+
+                
+            
+               
+            
+                while($row = mysqli_fetch_assoc($result))
+                {
+                $image=$row['image'];
+                $category=$row['product_type'];
+                $price=$row['price'];
+                // echo $image;
+                // echo $price;
+                // echo $category;
+
+               echo    <<< GFG
+              
+               <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+               <a class="block relative h-48 rounded overflow-hidden">
+                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="$image">
+               </a>
+               <div class="mt-4">
+                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">$category</h3>
+                 <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
+                 <div class="flex flex-col justify-center">
+                   <p class="mt-1">Base :- Rs $price</p>
+                   <p class="mt-1">Current :- Rs 50.00</p>
+                   </div>
+                   <br>
+                   <div class="flex flex-row">
+                     <input class="justify-center bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Enter the bid amount" type="number">
+                     <button class="flex ml-auto text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
+                   </div>
+               </div>
+             </div>
+       
+       GFG;
+               
+         }
+        
+    echo  "</div>";
+    
+
+         
+    }
+           
+             ?>
+
+
+     
+
+      <!--start commenting from here to make it run in a for loop--> 
+      
+      <!--end before this line-->
+  </div>
+</div>
+</section>
+
+
+
+
 <footer class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap md:text-left text-center order-first">
@@ -263,7 +175,7 @@
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COMPLAIN</h2>
         <div class="flex xl:flex-no-wrap md:flex-no-wrap lg:flex-wrap flex-wrap justify-center md:justify-start">
           <input class="w-40 sm:w-auto bg-gray-100 rounded xl:mr-4 lg:mr-0 sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base py-2 px-4" placeholder="enter your complain" type="text">
-          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-green-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Submit</button>
+          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Submit</button>
         </div>
         <p class="text-gray-500 text-sm mt-2 md:text-left text-center">You can add Your Complain
           <br class="lg:block hidden">We are here to help you
@@ -309,9 +221,5 @@
     </div>
   </div>
 </footer>
->>>>>>> 4a522b6d90c55b40c3eb89b8920b5dabe376982a
-=======
-
->>>>>>> b269119e09b66a39a5ed9a729c8b0740e04c26d1
 </body>
 </html>

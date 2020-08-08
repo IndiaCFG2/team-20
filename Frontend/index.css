@@ -23,7 +23,15 @@ html {
 
 }
 
-
+footer
+{
+  height:21%;
+  font-size:20px;
+  margin-top:5%;
+  background-color: grey;
+  align-content: center;
+  vertical-align: baseline;
+}
 
 h4
 {
@@ -202,7 +210,7 @@ nav:hover
     footer
     {
       font-size:20px;
-      width:90%;
+      width:100%;
       height:auto;
       margin-top:auto 0;
       

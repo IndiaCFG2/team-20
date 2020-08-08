@@ -47,13 +47,12 @@ def comments(request):
 
 class Infocreateview(CreateView):
     model = Info
-    # template_name = 'index.html'
+    template_name = 'Info/schemeAddition.html'
     fields = ['name','description','registerationlink','pdflink']
 
     def form_valid(self, form):
       
         return super().form_valid(form)
-
 
 class Querycreateview(CreateView):
     model = Query
