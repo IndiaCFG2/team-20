@@ -16,30 +16,15 @@ def infos(request):
     context = {
         'infos':infos,'search_term':search_term
     }
-    return render(request,'Info/infos.html',context)
-
-def queries(request):
-    queries = Query.objects.all()
-    search_term = ''
-    if 'search' in request.GET:
-        search_term = request.GET['search']
-        queries = queries.filter(
-            Q(question__icontains=search_term)
-        )
-    context = {
-        "queries":queries,"search_term":search_term
-    }
-    return render(request,'Info/queries.html',context)
-
+    return render(request,'Info/schema.html',context)
 class Infocreateview(CreateView):
     model = Info
-    # template_name = 'index.html'
+    template_name = 'Info/schemeAddition.html'
     fields = ['name','description','registerationlink','pdflink']
 
     def form_valid(self, form):
       
         return super().form_valid(form)
-
 
 class Querycreateview(CreateView):
     model = Query
