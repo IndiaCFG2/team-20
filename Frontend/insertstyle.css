@@ -15,10 +15,7 @@ html {
   padding-left:1%;
   margin:0 auto;
   vertical-align: middle;
-  background-color:#f2f2f2;
-
-  
-  background-image: url(https://www.solvay.com/sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media403/61160-8sbe5pbpfw.jpg?itok=J8bcCEpd);
+  background-image: url(imagesfpo/light.jfif);
   opacity:0.9;
 
 }
@@ -44,9 +41,15 @@ h1{
   box-shadow: 4px 4px 5px #888888;
 }
 
-
-
-
+footer
+{
+  height:21%;
+  font-size:15px;
+  
+  background-color: #dbe0e4;
+  align-content: center;
+  vertical-align: baseline;
+}
 
 /* The hero image */
 img
@@ -89,9 +92,7 @@ p
   text-align: center;
   font-family: arial;
   padding-left:20%;
-  padding-right: 20%;
-  font-color:;
-  opacity:none;
+  padding-right: 20%
 }
 nav:hover, video:hover
 {
@@ -115,7 +116,7 @@ h1{
 
 body
 {
-  background-image: url(registerblood.JPEG);
+ 
   object-fit: cover;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -201,11 +202,11 @@ nav:hover
   @media screen and (max-width: 600px) {
     footer
     {
-      font-size:20px;
+      font-size:12px;
       width:90%;
       height:auto;
       margin-top:auto 0;
-      
+   
     }
 
 
