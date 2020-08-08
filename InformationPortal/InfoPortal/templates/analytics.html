@@ -1,4 +1,6 @@
-<!DOCTYPE html> 
+{% extends "header.html" %}
+{% block content%}
+
 <head>
 	{% load static %}
     <script async="" src="{% static 'analytics.js' %}"></script><script src="{% static 'Chart.min.js' %}"></script>
@@ -6,7 +8,7 @@
     
 </head>
 <body> 
-    <div style="width:50%;height:50%;">
+    <div style="width:70%;height:40%;">
     <canvas id="chart"  ></canvas>
     <script> 
         var ctx = document.getElementById("chart").getContext("2d");
@@ -15,6 +17,7 @@
             data : {
 			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 			datasets: [{
+				type : 'line',
 				label: 'Potato',
 				borderColor: window.chartColors.red,
 				backgroundColor: window.chartColors.red,
@@ -22,68 +25,50 @@
 				data: [
 			3,6,8,10,34,45,34,23
 				],
-				yAxisID: 'y-axis-1',
 			}, {
+				type : 'line',
 				label: 'Carrot',
 				borderColor: window.chartColors.blue,
 				backgroundColor: window.chartColors.blue,
+				stack : "Stack 0",
 				fill: false,
 				data: [
 				34,54,23,34,35,34,98
 				],
-				yAxisID: 'y-axis-2'
 			},{
-				label: 'Brinjal',
-				borderColor: window.chartColors.red,
-				backgroundColor: window.chartColors.red,
+				type : 'line',
+				label: 'Onion',
+				borderColor: window.chartColors.yellow,
+				backgroundColor: window.chartColors.yellow,
+				stack : "Stack 0",
 				fill: false,
 				data: [
 			22,34,45,34,26
 				],
-				yAxisID: 'y-axis-3',
 			}
 			]
 		},
             options: {
 					responsive: true,
-					hoverMode: 'index',
-					stacked: false,
 					title: {
 						display: true,
-						text: 'Price'
+						text: 'Price v/s Months'
+					},
+					tooltips:{
+						mode: "index",
+						intersect: true
 					},
 					scales: {
-						yAxes: [{
-							type: 'linear', 
-							display: true,
-							position: 'left',
-							id: 'y-axis-1',
-						}, {
-							type: 'linear', 
-							display: true,
-							position: 'right',
-							id: 'y-axis-2',
-
-							gridLines: {
-								drawOnChartArea: false,
-							},
-							{
-							type: 'linear', 
-							display: true,
-							position: 'right',
-							id: 'y-axis-3',
-
-							gridLines: {
-								drawOnChartArea: false,
-							},
-						}],
+						xAxes: [{
+							stacked: true,
+						}
+						]
 					}
 				}
         })
-        //var data = "{{data|safe}}"; 
-        //console.log(data);
     </script>
         </div>
 
 </body> 
 </html> 
+{% endblock content %}

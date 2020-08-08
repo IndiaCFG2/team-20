@@ -1,11 +1,17 @@
 from django.urls import path
 from . import views
 from .views import (
-    Infodetailview,
+    Infocreateview,
+    Querycreateview,
+    Querydetailview,
+    Commentcreateview
+    
 )
 
 urlpatterns = [
-    path('',Infodetailview.as_view(),name = 'lets'),
-    path('teams/',views.infos,name = 'teams')
-
+    path('',Infocreateview.as_view(),name = 'lets'),
+    path('infos/',views.infos,name = 'infos'),
+    path('query/',Querydetailview.as_view(),name = 'query'),
+    path('comment/',Commentcreateview.as_view(),name = 'comment'),
+    
 ]

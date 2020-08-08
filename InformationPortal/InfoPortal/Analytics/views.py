@@ -1,12 +1,15 @@
 from django.shortcuts import render
-#import requests
+import requests
+import json
 
 def my_django_view(request,*args,**kwargs):
-    # if request.method == 'POST':
-    #     r = requests.post('https://www.somedomain.com/some/url/save', params=request.POST)
-    # else:
-    #     r = requests.get('https://www.somedomain.com/some/url/save', params=request.GET)
-    # if r.status_code == 200:
-    #     return render(request,'Yay, it worked')
-    return render(request,"template.html",{})
-# Create your views here.
+    response = None
+    try :
+        response = requests.post('https://www.somedomain.com/some/url/save', params=request.POST) 
+    except: 
+        return render(request,"analytics.html",{})
+    else:
+        json = json.load(response)
+        data = json.data
+        return render(request,"analytics.html",{"onion" : data[0], "potato" : data[1], "Carrot" : data[2]})
+
