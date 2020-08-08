@@ -30,131 +30,104 @@
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex w-full mb-20 flex-wrap">
         <div class="lg:w-2/3 mx-auto">
-      <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
         <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="img4.jpg">
-        <div class="text-center relative z-10 w-full">
+              <div class="text-center relative z-10 w-full">
           <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Partner with Us to IMPACT SCALE</h2>
           <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Centre for Aquatic Livelihood Jaljeevika 
             is addressing the issue of small-scale fish farmers, building community resilience and capacity to 
             enhance livelihood opportunities using existing water bodies, technology and leveraging institutions.</p>       
         </div>
       </div>    
-       </div>
+    </div>
+
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img1.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex flex-col justify-center">
-            <p class="mt-1">Base :- Rs 16.00</p>
-            <p class="mt-1">Current :- Rs 50.00</p>
-            </div>
-            <br>
-            <div class="flex flex-row">
-              <input class="justify-center bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Enter the bid amount" type="number">
-              <button class="flex ml-auto text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-              </div>
-        </div>
-      </div>
-      <!--start commenting from here to make it run in a for loop--> 
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img2.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
 
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img3.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img4.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img5.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img6.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img7.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="img8.jpg">
-        </a>
-        <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">FISH</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
-          <div class="flex justify-center">
-            <p class="mt-1">Rs 16.00</p>
-            <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
-          </div>
-        </div>
-      </div>
+
+    <?php
+            
+
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "codeforcure";
+
+            $conn = mysqli_connect($servername, $username, $password, $database);
+            // Die if connection was not successful
+            if (!$conn){
+                // die("Sorry we failed to connect: ". mysqli_connect_error());
+            }
+            else{
+                // echo "Connection was successful<br>";
+            }
+    
+            $sql = "SELECT * FROM `product1`";
+            $result = mysqli_query($conn, $sql);
+    
+            // Find the number of records returned
+            $num = mysqli_num_rows($result);
+            // echo $num;
+            // echo " records found in the DataBase<br>";
+            // Display the rows returned by the sql query
+            // echo $name;
+            // echo $password1;
+            if($num> 0){
+
+                
+            
+               
+            
+                while($row = mysqli_fetch_assoc($result))
+                {
+                $image=$row['image'];
+                $category=$row['product_type'];
+                $price=$row['price'];
+                // echo $image;
+                // echo $price;
+                // echo $category;
+
+               echo    <<< GFG
+              
+               <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+               <a class="block relative h-48 rounded overflow-hidden">
+                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="$image">
+               </a>
+               <div class="mt-4">
+                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">$category</h3>
+                 <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
+                 <div class="flex flex-col justify-center">
+                   <p class="mt-1">Base :- Rs $price</p>
+                   <p class="mt-1">Current :- Rs 50.00</p>
+                   </div>
+                   <br>
+                   <div class="flex flex-row">
+                     <input class="justify-center bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Enter the bid amount" type="number">
+                     <button class="flex ml-auto text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
+                   </div>
+               </div>
+             </div>
+       
+       GFG;
+               
+         }
+        
+    echo  "</div>";
+    
+
+         
+    }
+           
+             ?>
+
+
+     
+
+      <!--start commenting from here to make it run in a for loop--> 
+      
       <!--end before this line-->
   </div>
+</div>
 </section>
 
 

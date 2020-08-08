@@ -14,11 +14,15 @@ class Info(models.Model):
 
     def get_absolute_url(self):
         return reverse('infos')
+
 class Query(models.Model):
     question = models.CharField(_("Question"), max_length=50)
     
     def __str__(self):
         return self.question
+
+    def get_absolute_url(self):
+        return reverse('queries')
 
 class Comment(models.Model):
     query = models.ForeignKey("Query", verbose_name=_("query"), on_delete=models.CASCADE)
