@@ -1,7 +1,11 @@
+ <form action="" style="padding-top:20px">
+      <input type="text" placeholder="Search.." name="search" id="search" value="{{search_term}}">
+</form>
 {% for info in infos%}
 {{ info.name}} <br>
 {{ info.description}} <br>
-{{ info.registerationlink}} <br>
-<a href="{{ info.pdflink }}">Download Pdf</a></li> <br>
+ 
+<a href="{{ info.registerationlink}}">Register</a><br>
+<a href="{{ info.pdflink }}">Download Pdf</a> <br>
 <br>
 {% endfor %}
