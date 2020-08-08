@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Info
+from .models import Info,Query,Comment
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 from django.db.models import Q
 # Create your views here.
@@ -26,3 +26,25 @@ class Infodetailview(CreateView):
       
         return super().form_valid(form)
 
+class Querydetailview(CreateView):
+    model = Query
+    # template_name = 'index.html'
+    fields = ['question']
+
+    def form_valid(self, form):
+      
+        return super().form_valid(form)
+
+
+class Commentdetailview(CreateView):
+    model = Query
+    # template_name = 'index.html'
+    fields = ['query','content']
+
+    def form_valid(self, form):
+      
+        return super().form_valid(form)
+
+
+
+    
