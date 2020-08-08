@@ -32,7 +32,17 @@
 				34,54,23,34,35,34,98
 				],
 				yAxisID: 'y-axis-2'
-			}]
+			},{
+				label: 'Brinjal',
+				borderColor: window.chartColors.red,
+				backgroundColor: window.chartColors.red,
+				fill: false,
+				data: [
+			22,34,45,34,26
+				],
+				yAxisID: 'y-axis-3',
+			}
+			]
 		},
             options: {
 					responsive: true,
@@ -53,6 +63,15 @@
 							display: true,
 							position: 'right',
 							id: 'y-axis-2',
+
+							gridLines: {
+								drawOnChartArea: false,
+							},
+							{
+							type: 'linear', 
+							display: true,
+							position: 'right',
+							id: 'y-axis-3',
 
 							gridLines: {
 								drawOnChartArea: false,
