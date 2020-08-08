@@ -72,6 +72,9 @@ if(isset($_POST["submit"]))
     <li class="nav-item">
       <a class="nav-link" href="#">View Products</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../signout.php">Sign Out</a>
+    </li>
   </ul>
   </nav>
 <div id="picture">
@@ -135,7 +138,7 @@ In order to address the credit needs of Farmer Producer Companies (FPCs), SFAC a
 
       <div class="row">
       <div class="col-30">
-        <label for="image">Insert Image: </label>
+        <label for="image">Insert Imsage: </label>
       </div>
       <div class="col-60">
       <p>  </p><input type="file" name="image" id="image"/>
