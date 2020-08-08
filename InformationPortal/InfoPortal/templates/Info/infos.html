@@ -1,0 +1,7 @@
+{% for info in infos%}
+{{ info.name}} <br>
+{{ info.description}} <br>
+{{ info.registerationlink}} <br>
+<a href="{{ info.pdflink }}">Download Pdf</a></li> <br>
+<br>
+{% endfor %}
