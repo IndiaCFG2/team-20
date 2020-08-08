@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2020 at 12:31 PM
+-- Generation Time: Aug 08, 2020 at 01:01 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -73,11 +73,20 @@ CREATE TABLE `product` (
 
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `phone_no` varchar(10) DEFAULT NULL,
   `email_id` varchar(50) DEFAULT NULL,
   `address_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`, `password`, `name`, `phone_no`, `email_id`, `address_id`) VALUES
+(2, '', '', 'sakchi', '1234567890', 'bgbgxbx', NULL);
 
 --
 -- Indexes for dumped tables
@@ -137,7 +146,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
