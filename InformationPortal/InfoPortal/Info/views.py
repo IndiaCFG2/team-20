@@ -17,6 +17,20 @@ def infos(request):
         'infos':infos,'search_term':search_term
     }
     return render(request,'Info/infos.html',context)
+
+def queries(request):
+    queries = Query.objects.all()
+    search_term = ''
+    if 'search' in request.GET:
+        search_term = request.GET['search']
+        queries = queries.filter(
+            Q(question__icontains=search_term)
+        )
+    context = {
+        "queries":queries,"search_term":search_term
+    }
+    return render(request,'Info/queries.html',context)
+
 class Infocreateview(CreateView):
     model = Info
     # template_name = 'index.html'
@@ -25,6 +39,7 @@ class Infocreateview(CreateView):
     def form_valid(self, form):
       
         return super().form_valid(form)
+
 
 class Querycreateview(CreateView):
     model = Query

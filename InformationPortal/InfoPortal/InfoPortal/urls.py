@@ -21,6 +21,7 @@ import os
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Info.urls')),
+    path("query/",include("Info.urls")),
     path('analytics/',my_django_view,name="charts")
 ]
 

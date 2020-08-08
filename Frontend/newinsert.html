@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JALJEEVIKA</title>
-	 <meta charset="utf-8">
+   <meta charset="utf-8">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <!--<script src="index.js"></script>-->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
- <link rel="stylesheet" type="text/css" href="insertstyle.css">
- <link rel="stylesheet" type="text/css" href="insertstyle.css">
+ <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+  <title>jaljeevika</title>
 </head>
 <body>
-   <h1 class="animate__animated animate__bounce" height="30px">Jaljeevika</h1>
+
+
+<h1 class="animate__animated animate__bounce" height="30px">Jaljeevika</h1>
 
    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
      <ul class="navbar-nav">
@@ -27,30 +29,23 @@
       <a class="nav-link" href="govt.html">Goverment Schemes</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="profile.html">Profile</a>
+      <a class="nav-link" href="fpoprofile.html">Profile</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="insert.html">Add Product</a>
     </li>
   </ul>
   </nav>
-<!--<div id="picture">
-  <img src="https://img.freepik.com/free-photo/vegetable-rows-pepper-grow-field-farming-agriculture_72572-4.jpg?size=626&ext=jpg" alt="picture" width="1450" height="500">
-</div>-->
 
+  <div class="container">
+  <form action="action_page.php">
 
-<div>
-  <br>
-  <br>
-<form  class="conatiner" method="post"  action="1.php" >
-
-     <div class="row">
+<div class="row">
       <div class="col-30">
         
       </div>
-      <div class="col-60">
-       <label for="Product Type">Product Type:</label>
-
+      <div class="col-65">
+       <label class="if">Product Type:</label>
    <select name="type" id="type">
     <option value="Seafood">Seafood</option>
    <option value="fruits">Fruits</option>
@@ -62,57 +57,38 @@
   
       </div>
     </div>
-      
+  
     <div class="row">
       <div class="col-30">
-        <label for="Product">Product Name : </label>
+        <label for="fname">Product Name:</label>
       </div>
-      <div class="col-60">
-        <input type="text" id="product" name="product_name" placeholder="Product name.." required>
+      <div class="col-65">
+        <input type="text" id="ptype" name="product_name" placeholder="Product name..">
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-30">
+        <label for="lname">Quantity(kg) :</label>
+      </div>
+      <div class="col-65">
+        <input type="text" id="qty" name="quantity" placeholder="quantity..">
+      </div>
+    </div>
+   
 
    <div class="row">
       <div class="col-30">
-        <label for="quantity">Quantity(kg) : </label>
+        <label for="lname">Best Price(Rs) :</label>
       </div>
-      <div class="col-60">
-        <input type="text" id="quantity" name="quantity" placeholder="Quantity.." required>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-30">
-        <label for="price"> Base price(Rs) : </label>
-      </div>
-      <div class="col-60">
-        <input type="text" id="price" name="price" placeholder="Base price.." required>
+      <div class="col-65">
+        <input type="text" id="price" name="price" placeholder="price..">
       </div>
     </div>
-
-      <div class="row">
-      <div class="col-30">
-        <label for="district">Insert Image : </label>
-      </div>
-      <div class="col-60">
-      <input type="file" id="img" name="img" accept="image/*">
-      </div>
+   <br>
+      <input type="submit" name="submit" value="Submit">
     </div>
-         <div></div>
-         <div>
-          <P>             </P>
-      <input type="submit" name="submit" value="Submit" style="text-align:center">
-    </div>
-  </div>
   </form>
-
-
-
-
-
-
-
-
+</div>
 </body>
 </html>
+
