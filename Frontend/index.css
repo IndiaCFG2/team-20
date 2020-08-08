@@ -1,0 +1,197 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+   background:  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size:20px;
+  padding-top: 1%;
+  padding:2%;
+  padding-top: 1%;
+  padding-left:1%;
+  margin:0 auto;
+  vertical-align: middle;
+  background-color:#f2f2f2;
+
+}
+
+
+
+h4
+{
+  color:orange;
+}
+
+#map {
+  height:50%;
+  margin: 10px auto;
+  width: 90%;
+}
+
+h1{
+  font-family:fantasy;
+  border:2px solid black;
+  text-align: center;
+  color:#842838;
+  box-shadow: 4px 4px 5px #888888;
+}
+
+
+
+/* The hero image */
+img
+{
+  display: flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  transition:4s;
+  width:100%;
+  padding:2%;
+  object-fit:cover; 
+  opacity: 82%;
+}
+
+img:hover
+{
+  transform:scale(1.1);
+}
+
+video  {
+  display: flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+
+
+p
+{
+  display: flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  padding-left:20%;
+  padding-right: 20%
+}
+nav:hover, video:hover
+{
+  cursor: pointer;
+  background-color:pink;
+  font-color:pink;
+  font-size:110%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  font-family:fantasy;
+  border:2px solid pink;
+  text-align: center;
+  color:black;
+  box-shadow: 4px 4px 5px #888888;
+}
+
+body
+{
+  background-image: url(registerblood.JPEG);
+  object-fit: cover;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  /*background-size: 100% 1100px;*/
+  background-size: cover;
+  margin:30px 60px 30px 60px;
+}
+
+input[type=text],input[type=email],input[type=phone] ,input[type=image],select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+form {
+   width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+  width:25em;
+  height:25em;
+}
+
+/*.container:hover
+{
+  transform:scale(1.05);
+}*/
+
+.col-30 {
+  float: left;
+  width: 20em;
+  margin-top: 6px;
+}
+
+.col-60 {
+  float: left;
+  width: 20em;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav:hover
+{
+  cursor: pointer;
+  background-color:pink;
+  font-color:pink;
+  font-size:110%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-30,.conatiner, .col-60, input[type=submit] ,input[type=submit]{
+    width: 90%;
+    font-size: 12px;
+    margin-top: auto 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    input[type=submit]
+    {
+      width:50%;
+    }

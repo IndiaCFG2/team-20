@@ -1,0 +1,44 @@
+body
+{
+	background-image: url(https://www.solvay.com/sites/g/files/srpend221/files/styles/header/https/media.solvay.com/medias/domain1446/media403/61160-8sbe5pbpfw.jpg?itok=J8bcCEpd);
+	opacity:0.8;
+
+}
+
+.card {
+    min-height:500px;
+}
+
+img
+{
+	width:10em;
+	height:10em;
+
+}
+img:hover
+{
+  transform:scale(1.1);
+}
+
+card-title:hover
+{
+  transform:scale(1.1);
+}
+nav:hover
+{
+  cursor: pointer;
+  background-color:pink;
+  font-color:pink;
+  font-size:110%;
+}
+
+@media screen and (max-width: 600px) {
+    .card-img-top
+    {
+      width:95%;
+    }
+
+ .row
+ {
+ 	padding-top: 10%;
+ }
