@@ -9,6 +9,6 @@ def my_django_view(request,*args,**kwargs):
     except:
         pass
     finally: 
-        return render(request,"template.html",{})
+        return render(request,"analytics.html",{"onion" : res})
 # Create your views here.
 
