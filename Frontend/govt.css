@@ -5,6 +5,16 @@ body
 
 }
 
+footer
+{
+  height:21%;
+  font-size:20px;
+  margin-top:5%;
+  background-color: grey;
+  align-content: center;
+  vertical-align: baseline;
+}
+
 .card {
     min-height:500px;
 }
@@ -13,7 +23,7 @@ img
 {
 	width:10em;
 	height:10em;
-
+#f2f2f2
 }
 img:hover
 {
