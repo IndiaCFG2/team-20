@@ -31,6 +31,20 @@ def queries(request):
     }
     return render(request,'Info/queries.html',context)
 
+def comments(request):
+        comments = Comment.objects.all()
+        search_term = ''
+        if 'search' in request.GET:
+            search_term = request.GET['search']
+            queries = comments.filter(
+                Q(query__question__icontains=search_term)
+            )
+        context = {
+            "queries":queries,"search_term":search_term
+        }
+        return render(request,'Info/comments.html',context)
+
+
 class Infocreateview(CreateView):
     model = Info
     # template_name = 'index.html'
