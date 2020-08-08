@@ -129,7 +129,7 @@ In order to address the credit needs of Farmer Producer Companies (FPCs), SFAC a
         <label for="Date of availability">Date of availablity: </label>
       </div>
       <div class="col-60">
-        <input type="text" id="available" name="available" placeholder="Date of availability: " required/>
+        <input type="date" id="available" name="available" placeholder="Date of availability: " required/>
       </div>
     </div>
 
