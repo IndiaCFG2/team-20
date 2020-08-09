@@ -73,10 +73,10 @@ if(isset($_POST["submit"]))
       <a class="nav-link" href="../../Frontend/govt.html">Goverment Schemes</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="../../Frontend/fpoprofile.html">Profile</a>
+      <a class="nav-link" href="../../Frontend/profile.html">Profile</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="add_product.php">Add Product</a>
+      <a class="nav-link" href="../BiddingPortal/FPO/dashboard.php">Add Product</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="../signout.php">Sign Out</a>

@@ -29,12 +29,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/codeforcure/index.php/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="Frontend\login-signup\index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/codeforcure/login-signup/login.php/">Login/Sign-up</a>
+        <a class="nav-link" href="Frontend\login-signup\index.php">Login/Sign-up</a>
       </li>
-    
+      <li class="nav-item active">
+        <a class="nav-link" href="https://2d72274b9b43.ngrok.io/">Information Portal <span class="sr-only">(current)</span></a>
+      </li>
     
 
     </ul>

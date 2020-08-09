@@ -1,7 +1,7 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-        $id = $_POST['id'];
+        $name = $_POST['name'];
         $email = $_POST['email'];
         $password1 = $_POST['password'];
         $district= $_POST['district'];
@@ -24,11 +24,20 @@
       else{ 
         // Submit these to a database
         // Sql query to be executed 
-        $sql = "INSERT INTO `dealers` ( `id`, `email`, `password`, `district`,`state`,`type`)
-         VALUES ( '$id', '$email', '$password1', '$district','$state','$type');";
+        $insert_query = "INSERT INTO address(district,state,address_type) VALUES ('$district','$state',0)";
+        mysqli_query($conn, $insert_query);
+        $query1 = "SELECT address_id, address_type from address where district='$district' and state='$state'";
+        $result2 = mysqli_query($con, $query1);
+        $result11 = mysqli_fetch_assoc($result);
+        $address_id = $result11["address_id"];
+
+        $sql = "INSERT INTO `user` ( `user_type`, `password`,`name` , `phone_no`,`email_id`,`address_id`)
+         VALUES ( '$type','$password1','$name','987654310', '$email','$address_id');";
         $result = mysqli_query($conn, $sql);
  
         if($result){
+
+          //header("Location: ../fpomain.html")
         //   echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
         //   <strong>Success!</strong> Your entry has been submitted successfully!
         //   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -61,7 +70,7 @@
 	<title>User Signin and Signup</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/codeforcure/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -71,7 +80,7 @@
   <div class="cont">
     <div class="form sign-in">
       <h2>Sign In</h2>
-      <form action="/codeforcure/login.php/"  method="post">
+      <form action="login.php"  method="post">
         <label>
           <span>Email-id</span>
           <input type="text" name="email">
@@ -113,10 +122,10 @@
       </div>
       <div class="form sign-up">
         <h2>Sign Up</h2>
-        <form  action="/codeforcure/lunbna.php/" method="post">
+        <form  action="../lunbna.php/" method="post">
           <label>
-            <span>Register Id</span>
-          <input type="number" name="id">
+            <span>Name</span>
+          <input type="text" name="name">
           </label>
           <label>
             <span>Email</span>
@@ -147,6 +156,6 @@
       </div>
     </div>
   </div>
-<script type="text/javascript" src="/codeforcure/script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

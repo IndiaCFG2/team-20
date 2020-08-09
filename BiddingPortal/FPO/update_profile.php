@@ -46,7 +46,7 @@ if(isset($_POST["submit"]))
       if(mysqli_query($con, $query))  
       {  
            echo '<script>alert("Profile Updated Successfully")</script>';  
-           header("Location: ../../Frontend/login-signup/fpomain.html");
+         //  header("Location: ../../Frontend/login-signup/fpomain.html");
       }
   }
 ?>

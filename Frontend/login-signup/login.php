@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             // echo "Connection was successful<br>";
         }
 
-        $sql = "SELECT * FROM `dealers`";
+        $sql = "SELECT * FROM `user`";
         $result = mysqli_query($conn, $sql);
 
         // Find the number of records returned
@@ -38,13 +38,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         if($num> 0){
             while($row = mysqli_fetch_assoc($result)){
                 // echo var_dump($row);
-               echo $row['email'];
-               echo $row['password'];
+              // echo $row['email'];
+              // echo $row['password'];
             
-                if($row['email']==$name && $row['password']==$password1)
+                if($row['email_id']==$name && $row['password']==$password1)
                 {
-                    echo "***";
-                    header("Location: /codeforcure/index.php");
+                   // echo "***";
+                    header("Location: ../fpomain.html");
                 }
                 // echo $row['sno'] .  ". Hello ". $row['name'] ." Welcome to ". $row['dest'];
                 // echo "<br>";
