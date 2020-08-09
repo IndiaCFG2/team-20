@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JALJEEVIKA</title>
+	 <meta charset="utf-8">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!--<script src="index.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="insertstyle.css">
+ <link rel="stylesheet" type="text/css" href="insertstyle.css">
+</head>
+<body>
+   <h1 class="animate__animated animate__bounce" height="30px">Jaljeevika</h1>
+
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+     <ul class="navbar-nav">
+      <li class="nav-item">
+      <a class="nav-link" href="fpomain.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="govt.html">Goverment Schemes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="fpoprofile.html">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="newinsert.html">Add Product</a>
+    </li>
+  </ul>
+  </nav>
+<!--<div id="picture">
+  <img src="https://img.freepik.com/free-photo/vegetable-rows-pepper-grow-field-farming-agriculture_72572-4.jpg?size=626&ext=jpg" alt="picture" width="1450" height="500">
+</div>-->
+
+
+<div>
+  <br>
+  <br>
+<form  class="conatiner" method="post"  action="1.php" >
+
+     <div class="row">
+      <div class="col-30">
+        
+      </div>
+      <div class="col-60">
+       <label for="Product Type">Product Type:</label>
+
+   <select name="type" id="type">
+    <option value="Seafood">Seafood</option>
+   <option value="fruits">Fruits</option>
+   <option value="vegetables">Vegetables</option>
+   <option value="Poultry">Poultry</option>
+   <option value="Pulses">Pulses</option>
+   <option value="Cereals">Cereals</option>
+  </select>
+  
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-30">
+        <label for="Product">Product Name : </label>
+      </div>
+      <div class="col-60">
+        <input type="text" id="product" name="product_name" placeholder="Product name.." required>
+      </div>
+    </div>
+
+
+   <div class="row">
+      <div class="col-30">
+        <label for="quantity">Quantity(kg) : </label>
+      </div>
+      <div class="col-60">
+        <input type="text" id="quantity" name="quantity" placeholder="Quantity.." required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-30">
+        <label for="price"> Base price(Rs) : </label>
+      </div>
+      <div class="col-60">
+        <input type="text" id="price" name="price" placeholder="Base price.." required>
+      </div>
+    </div>
+
+      <div class="row">
+      <div class="col-30">
+        <label for="district">Insert Image : </label>
+      </div>
+      <div class="col-60">
+      <input type="file" id="img" name="img" accept="image/*">
+      </div>
+    </div>
+         <div></div>
+         <div>
+          <P>             </P>
+      <input type="submit" name="submit" value="Submit" style="text-align:center">
+    </div>
+  </div>
+  </form>
+
+
+
+
+
+
+
+
+</body>
+</html>
