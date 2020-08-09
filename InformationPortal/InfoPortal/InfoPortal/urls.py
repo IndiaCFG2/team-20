@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls import url
-from Analytics.views import my_django_view
+
 from Info.views import comments
 import os
 
@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Info.urls')),
     path("query/",include("Info.urls")),
-    path('analytics/',my_django_view,name="charts"),
+   
     path("comments/", comments, name='comment')
 
 ]
