@@ -29,7 +29,35 @@ def infos(request):
     context = {
         'infos':infos,'search_term':search_term
     }
-    return render(request,'Info/schema.html',context)
+    return render(request,'Info/infos.html',context)
+
+def queries(request):
+    queries = Query.objects.all()
+    search_term = ''
+    if 'search' in request.GET:
+        search_term = request.GET['search']
+        queries = queries.filter(
+            Q(question__icontains=search_term)
+        )
+    context = {
+        "queries":queries,"search_term":search_term
+    }
+    return render(request,'Info/queries.html',context)
+
+def comments(request):
+        comments = Comment.objects.all()
+        search_term = ''
+        if 'search' in request.GET:
+            search_term = request.GET['search']
+            queries = comments.filter(
+                Q(query__question__icontains=search_term)
+            )
+        context = {
+            "queries":queries,"search_term":search_term
+        }
+        return render(request,'Info/comments.html',context)
+
+
 class Infocreateview(CreateView):
     model = Info
     template_name = 'Info/schemeAddition.html'
