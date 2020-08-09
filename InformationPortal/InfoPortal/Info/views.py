@@ -29,7 +29,7 @@ def infos(request):
     context = {
         'infos':infos,'search_term':search_term
     }
-    return render(request,'Info/infos.html',context)
+    return render(request,'Info/schema.html',context)
 
 def queries(request):
     queries = Query.objects.all()
