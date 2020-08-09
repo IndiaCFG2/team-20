@@ -1,5 +1,3 @@
-{% load crispy_forms_tags %}   
-{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,13 +14,10 @@
         </svg>
         <span class="ml-3 text-xl">CodeForCure</span>
       </a>
-        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-         <a class="mr-5 hover:text-gray-900" href="{% url 'home' %}" >Home</a>
-        <a class="mr-5 hover:text-gray-900" href="{% url 'analytics' %}">Analytics</a>
-         <a class="mr-5 hover:text-gray-900" href="{% url 'infos' %}">Gov</a>
-        <a class="mr-5 hover:text-gray-900" href="#">Login as FPO/Dealor</a>
-       </nav>
-     
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="profile.php">Profile</a>
+        <a class="mr-5 hover:text-gray-900" href="policies.php" >Government Policies</a>
+        </nav>
      <!-- <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -32,58 +27,112 @@
   </header>
 
   <section class="text-gray-700 body-font">
-    
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex w-full mb-20 flex-wrap">
         <div class="lg:w-2/3 mx-auto">
-      <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="{% static "Info/images/img4.jpg" %}">
-        <div class="text-center relative z-10 w-full">
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="img4.jpg">
+              <div class="text-center relative z-10 w-full">
           <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Partner with Us to IMPACT SCALE</h2>
           <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Centre for Aquatic Livelihood Jaljeevika 
             is addressing the issue of small-scale fish farmers, building community resilience and capacity to 
             enhance livelihood opportunities using existing water bodies, technology and leveraging institutions.</p>       
         </div>
       </div>    
-       </div>
-       </section>
+    </div>
 
-       <section class="text-gray-700 body-font relative">
-        <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
-          <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-            <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-            <div class="bg-white relative flex flex-wrap py-6">
-              <div class="lg:w-1/2 px-6">
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">AQUATIC LIVELIHOOD</h2>
-                <p class="leading-relaxed">Centre for Aquatic Livelihood Jaljeevika</p>
-              </div>
-              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">EMAIL</h2>
-                <a class="text-indigo-500 leading-relaxed">jaljeevika@email.com</a>
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">PHONE</h2>
-                <p class="leading-relaxed">123-456-7890</p>
-              </div>
-            </div>
-          </div>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+
+    <?php
             
-          <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <form method="POST" enctype="multipart/form-data">
-           {% csrf_token %}
-            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">ADD Scheme</h2>
-            {{ form.name|as_crispy_field }}
-             <div class="form-group col-md-6 mb-0 border-gray-400" >
-                        {{ form.description|as_crispy_field }}
-              </div>
-              {{ form.registerationlink|as_crispy_field }}
-                {{ form.pdflink|as_crispy_field }}
 
-            <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Add</button>
-            </form>
-            <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-          </div>
-        </div>
-      </section>
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $database = "codeforcure";
+
+            $conn = mysqli_connect($servername, $username, $password, $database);
+            // Die if connection was not successful
+            if (!$conn){
+                // die("Sorry we failed to connect: ". mysqli_connect_error());
+            }
+            else{
+                // echo "Connection was successful<br>";
+            }
     
+            $sql = "SELECT * FROM `product1`";
+            $result = mysqli_query($conn, $sql);
+    
+            // Find the number of records returned
+            $num = mysqli_num_rows($result);
+            // echo $num;
+            // echo " records found in the DataBase<br>";
+            // Display the rows returned by the sql query
+            // echo $name;
+            // echo $password1;
+            if($num> 0){
+
+                
+            
+               
+            
+                while($row = mysqli_fetch_assoc($result))
+                {
+                $image=$row['image'];
+                $category=$row['product_type'];
+                $price=$row['price'];
+                // echo $image;
+                // echo $price;
+                // echo $category;
+
+               echo    <<< GFG
+              
+               <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+               <a class="block relative h-48 rounded overflow-hidden">
+                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="$image">
+               </a>
+               <div class="mt-4">
+                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">$category</h3>
+                 <h2 class="text-gray-900 title-font text-lg font-medium">IRITY-KERALA</h2>
+                 <div class="flex flex-col justify-center">
+                   <p class="mt-1">Base :- Rs $price</p>
+                   <p class="mt-1">Current :- Rs 50.00</p>
+                   </div>
+                   <br>
+                   <div class="flex flex-row">
+                     <input class="justify-center bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Enter the bid amount" type="number">
+                     <button class="flex ml-auto text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Bid</button>        
+                   </div>
+               </div>
+             </div>
+       
+       GFG;
+               
+         }
+        
+    echo  "</div>";
+    
+
+         
+    }
+           
+             ?>
+
+
+     
+
+      <!--start commenting from here to make it run in a for loop--> 
+      
+      <!--end before this line-->
+  </div>
+</div>
+</section>
+
+
+
+
 <footer class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap md:text-left text-center order-first">

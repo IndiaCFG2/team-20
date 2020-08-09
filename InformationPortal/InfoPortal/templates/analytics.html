@@ -4,6 +4,10 @@
 	{% load static %}
     <script async="" src="{% static 'analytics.js' %}"></script><script src="{% static 'Chart.min.js' %}"></script>
     <script src="{% static 'utils.js' %}"></script>
+	  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Marketting</title>
     
 </head>
 <body> 
@@ -16,8 +20,9 @@
         <span class="ml-3 text-xl">CodeForCure</span>
       </a>
       <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+	    <a class="mr-5 hover:text-gray-900" href="{% url 'home' %}" >Home</a>
         <a class="mr-5 hover:text-gray-900" href="{% url 'analytics' %}">Analytics</a>
-        <a class="mr-5 hover:text-gray-900" href="policies.php" >Government Policies</a>
+        <a class="mr-5 hover:text-gray-900" href="{% url 'infos' %}" >Government Policies</a>
 
          <form action="" style="padding-top:20px">
       <input type="text" placeholder="Search.." name="search" id="search" value="{{search_term}}">
@@ -66,7 +71,7 @@
 				stack : "Stack 0",
 				fill: false,
 				data: [
-			22,34,45,34,26
+			22,34,45,34,26,45,66
 				],
 			}
 			]
