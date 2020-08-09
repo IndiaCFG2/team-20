@@ -7,7 +7,9 @@
 
 
 
-FUTURE 
+FUTURE USE
 
 we can have chat bots for communication
 Giving alerts as soon as new schemes is added
+Adding nearby feature or geolocation, we can optimise this by using clustering algorithms.
+Providing rating for both FPO and dealers.
