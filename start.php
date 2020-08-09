@@ -72,25 +72,12 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Governement schemes for FPO</h1>
-    <p class="lead"> 1)This is a modified jumbotron that occupies the <br> 2)entire horizontal space of its parent.
-     <br>3)one of the governemnt schemes
-     <br>4)one of the governemnt schemes
-     <br>5)one of the governemnt schemes
-     <br>6)one of the governemnt schemes
-     <br>7)one of the governemnt schemes
-
+    <p class="lead"> 1)National Mission For Sustainable Agriculture (NMSA)<br> 
+    2)Pradhan Mantri Krishi Sinchai Yojana (PMKSY)
+     <br>3)Livestock insurance Scheme
+     <br>4)National Scheme on Welfare of Fishermen
+     <br>5)Micro Irrigation Fund (MIF)
 </p>
-  </div>
-</div>
-
-<div class="card">
-  <div class="card-header">
-    addictional information about schemes
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">click here</a>
   </div>
 </div>
 
