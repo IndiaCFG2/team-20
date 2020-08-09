@@ -88,6 +88,13 @@ class Commentcreateview(CreateView):
 
 class Querydetailview(DeleteView):
     model = Query
+    # template_name = 'Info/discussion.html'
+    # def get_context_data(self,**kwargs):
+    #     context = super(Querydetailview, self).get_context_data(**kwargs)
+    #     comments = Comment.objects.filter()
+    #     context['comments'] = 
+    #     context['skits'] = Skits.objects.filter(Q(team_group_number_1=self.kwargs['pk'])|Q(team_group_number_2=self.kwargs['pk']))
+    #     return context   
 
 
 

@@ -7,7 +7,7 @@ class Info(models.Model):
     name = models.CharField(_("Scheme name"), max_length=100)
     description = models.TextField(_("Description about the scheme"), max_length=250,blank=True)
     registerationlink = models.CharField(_("Registration link"), max_length=150,blank=True)
-    pdflink = models.CharField(_("Pdf Link"), max_length=150,blank=True)
+    pdflink = models.CharField(_("Brochure Link"), max_length=150,blank=True)
     
     def __str__(self):
         return self.name
